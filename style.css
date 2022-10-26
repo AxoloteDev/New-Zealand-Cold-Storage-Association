@@ -1,0 +1,469 @@
+/* Importações */
+
+/* Fontes */
+
+@font-face {
+ font-family: noodle;
+ src: url(/fonts/noodle.ttf);
+}
+
+@font-face {
+ font-family: nevis;
+ src: url(/fonts/nevis.ttf);
+}
+
+/* Regras */
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+/* Variáveis */
+
+:root {
+ /* Cores: Do mais claro para o mais escuro */
+ --cor0: #ffffff;
+ --cor1: #5cf6ff;
+ --cor2: #97e2e6;
+ --cor3: #51d9e0;
+ --cor4: #359297;
+ --cor5: #c7f818;
+ /* Fontes */
+ --fontTexto: "Segoe UI", sans-serif;
+ --fontTitulo: "nevis", sans-serif;
+}
+
+/* Partes */
+
+/* Corpo */
+
+body {
+ font-size: 16px;
+}
+
+/* Cabeçalho */
+
+header {
+ padding: 5px;
+ background-color: var(--cor4);
+ position: sticky;
+ top: 0;
+ width: 100%;
+}
+
+/* Navegação */
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 5px;
+}
+
+nav a {
+ color: var(--cor0);
+ font: normal 1.3em var(--fontTexto);
+ font-variant: small-caps;
+ padding: 8px;
+ text-decoration: none;
+}
+
+nav a:hover {
+ color: var(--cor5);
+}
+
+.fi-br-menu-burger {
+ display: none;
+}
+
+.fi-br-menu-burger:hover {
+ color: var(--cor5);
+ cursor: pointer;
+}
+
+nav img {
+ height: 100%;
+ max-width: 65px;
+}
+
+/* Principal */
+
+main {
+ height: 100%;
+}
+
+main > h1 {
+ color: black;
+ font: normal 2.3em var(--fontTitulo);
+ font-variant: small-caps;
+ padding: 10px;
+ margin-top: 100px;
+ text-align: center;
+ line-height: 60px;
+}
+
+main > #h1_2 {
+ margin-top: 40px;
+}
+
+main > #h1_3 {
+ margin-top: 20px !important;
+ margin-bottom: 15px !important;
+ color: var(--cor5);
+}
+
+main > #h1_4 {
+ margin-top: 55px;
+}
+
+main > h2 {
+ color: var(--cor5);
+ font: normal 2.5em var(--fontTitulo);
+ font-variant: small-caps;
+ padding: 10px;
+ margin-top: 60px;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+main > p {
+ color: black;
+ margin-top: 30px !important;
+ font: normal 1.2em var(--fontTexto);
+ text-align: center;
+ max-width: 850px;
+ padding: 5px;
+ margin: auto;
+}
+
+main > #p1 {
+ color: black;
+ margin-top: 30px;
+ font: normal 1.3em var(--fontTexto);
+ text-align: center;
+ max-width: 500px;
+ padding: 5px;
+ margin: auto;
+}
+
+main > img {
+ margin: auto;
+ display: block;
+ margin-top: 60px !important;
+ max-width: 700px;
+ /* height: 100%; */
+ max-width: 100%;
+}
+
+main > ul {
+ display: block;
+ text-align: left;
+ margin-top: 30px;
+ padding: 10px;
+ list-style: none;
+}
+
+main > ul > li {
+ font: lighter 1.3em var(--fontTexto);
+ margin-bottom: 10px !important;
+ padding: 10px;
+ max-width: 750px;
+ margin: auto;
+}
+
+/* Div Baner */
+
+main #baner {
+ background-image: url(/imgs/img1.jpg);
+ height: 600px;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ background-attachment: fixed;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+main #baner h1 {
+ color: var(--cor0);
+ font: normal 3em var(--fontTitulo);
+ font-variant: small-caps;
+ padding: 10px;
+}
+
+main #baner #h1_1 {
+ color: var(--cor5);
+}
+
+/* Botão */
+
+.botao {
+ display: block;
+ text-align: center;
+ margin-top: 60px !important;
+ padding: 20px;
+ font: normal 1.5em var(--fontTitulo);
+ color: var(--cor0);
+ background-color: var(--cor5);
+ width: 200px;
+ margin: auto;
+ border: 2px solid var(--cor5);
+ text-decoration: none;
+}
+
+.botao:hover {
+ color: var(--cor5);
+ background-color: var(--cor0);
+}
+
+#botoes {
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ flex-direction: row wrap;
+ align-items: center;
+ margin-bottom: 100px;
+}
+
+#b1 {
+ margin: 0;
+ height: 90px;
+ margin-top: 15px !important;
+ margin-right: 15px !important;
+ width: 300px !important;
+ padding: 10px !important;
+}
+
+#b2 {
+ margin: 0;
+ height: 90px;
+ margin-top: 15px !important;
+ margin-left: 15px !important;
+ width: 300px !important;
+ padding: 10px !important;
+}
+
+.fi-tr-temperature-frigid {
+ display: block;
+ margin-top: 10px;
+ font-size: 30px;
+}
+
+.fi-rr-briefcase {
+ display: block;
+ margin-top: 10px;
+ font-size: 30px;
+}
+
+/* A parte */
+
+aside {
+ background-color: var(--cor4);
+ padding: 20px;
+ height: 660px;
+}
+
+aside > h1 {
+ color: var(--cor5);
+ font: normal 2.3em var(--fontTitulo);
+ font-variant: small-caps;
+ padding: 10px;
+ margin-top: 40px;
+ text-align: center;
+ line-height: 60px;
+}
+
+aside > p {
+ color: var(--cor0);
+ margin-top: 15px !important;
+ font: normal 1.4em var(--fontTexto);
+ text-align: center;
+ max-width: 850px;
+ padding: 5px;
+ margin: auto;
+}
+
+aside > form {
+ margin: auto;
+ margin-top: 45px;
+ max-width: 550px;
+}
+
+#nomes {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+form input {
+ padding: 8px;
+ border: none;
+ font: normal 1em var(--fontTexto);
+}
+
+form input:focus {
+ outline: 2px solid var(--cor5);
+}
+
+#nome {
+ width: 250px;
+}
+
+#sobrenome {
+ width: 250px;
+ margin-left: 10px;
+}
+
+#email {
+ display: block;
+ margin: auto;
+ margin-top: 10px;
+ width: 510px;
+}
+
+textarea {
+ display: block;
+ margin: auto;
+ margin-top: 10px;
+ padding: 10px;
+ resize: none;
+ border: none;
+ font: normal 1em var(--fontTexto);
+}
+
+form textarea:focus {
+ outline: 2px solid var(--cor5);
+}
+
+form button {
+ display: block;
+ text-align: center;
+ margin-top: 10px !important;
+ padding: 10px;
+ font: normal 1em var(--fontTitulo);
+ color: var(--cor0);
+ background-color: var(--cor5);
+ width: 150px;
+ border: 2px solid var(--cor5);
+ text-decoration: none;
+ float: left;
+ margin-left: 20px;
+ cursor: pointer;
+}
+
+form button:hover {
+ color: var(--cor5);
+ background-color: var(--cor0);
+}
+
+/* Rodapé */
+
+footer {
+ padding: 20px;
+ margin-top: 75px;
+ background-color: var(--cor4);
+}
+
+footer > p {
+ color: var(--cor0);
+ text-align: center;
+ font: normal 0.8em var(--fontTexto);
+ padding: 5px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 750px) {
+ /* Principal */
+
+ main #baner {
+  justify-content: center;
+ }
+
+ main #baner h1 {
+  margin-top: 40px;
+ }
+
+ main #baner #h1_1 {
+  margin-top: 0px;
+ }
+}
+
+@media only screen and (max-width: 650px) {
+ /* Corpo */
+ body {
+  font-size: 14px;
+ }
+
+ /* Principal */
+
+ main #baner {
+  justify-content: center;
+ }
+
+ /* A parte */
+
+ aside {
+  height: 700px;
+ }
+
+ /* Formulario */
+
+ form input {
+  display: block;
+ }
+
+ #nomes {
+  display: block;
+ }
+
+ #nome {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 400px;
+ }
+
+ #sobrenome {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 400px;
+ }
+
+ #email {
+  margin: auto;
+  margin-bottom: 15px;
+  max-width: 400px;
+ }
+
+ textarea {
+  margin: 0;
+  margin: auto;
+ }
+
+ form button {
+  float: none;
+  margin: auto;
+  margin-top: 20px;
+ }
+}
+
+@media only screen and (max-width: 530px) {
+ /* Navegação */
+
+ nav a {
+  display: none;
+ }
+
+ .fi-br-menu-burger {
+  display: block;
+  font-size: 1.5em;
+  margin-right: 5px;
+  padding: 5px;
+  position: relative;
+  top: 5px;
+  color: var(--cor0);
+ }
+}
